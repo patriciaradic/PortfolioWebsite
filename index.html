@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Patricia Radić | Junior Software Developer Portfolio</title>
+        <meta name="description" content="Portfolio of Patricia Radić, Junior Software Developer showcasing projects, skills, and contact information.">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <header>
+            <nav role="navigation">
+                <h1 class="logo">Patricia Radić</h1>
+                <button class="hamburger" onclick="toggleMenu()">☰</button>
+                <ul class="nav-links">
+                    <li><a href="#about-me">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <section id="about-me">
+                <h2>About Me</h2>
+                <p>I am a passionate Junior Software Developer focused on building clean, accessible, and user-friendly web applications.</p>
+            </section>
+
+            <section id="projects">
+                <h2>Projects</h2>
+
+                <article class="project" data-category="web">
+                    <figure>
+                        <img src="https://via.placeholder.com/300" alt="ReadOps preview" onclick="openLightbox(this)">
+                        <figcaption>ReadOps</figcaption>
+                    </figure>
+                    <p>A library management web application with a React frontend and .NET backend. 
+                        Implemented CRUD functionality for books and members across four pages: book overview with filtering and pagination, book details with loan history and editing, member overview with adding and searching, and member details with loan history and membership and book management capabilities.
+                    </p>
+                </article>
+
+                <article class="project" data-category="mobile">
+                    <figure>
+                        <img src="https://via.placeholder.com/300" alt="Numbro preview" onclick="openLightbox(this)">
+                        <figcaption>Numbro</figcaption>
+                    </figure>
+                    <p>A number guessing game inspired by Wordle. 
+                        It features three difficulty levels and a system for tracking your best scores per level.
+                    </p>
+                </article>
+
+            </section>
+
+            <section id="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>JavaScript</li>
+                    <li>HTML5 & CSS3</li>
+                    <li>C, C++ & C#</li>
+                    <li>.NET & React</li>
+                    <li>Git & GitHub</li>
+                </ul>
+            </section>
+
+            <section id="contact">
+                <h2>Contact</h2>
+                <form id="contactForm">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>© 2026 Patricia Radić</p>
+        </footer>
+
+        <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+            <img id="lightbox-img" alt="Expanded project image">
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
